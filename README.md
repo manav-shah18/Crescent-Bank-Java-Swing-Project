@@ -78,9 +78,9 @@ OR run using VS Code button
 
 ## Screenshots
 
-![Home](screenshots/home.png)
-![Create Account](screenshots/create.png)
-![Transactions](screenshots/transaction.png)
+![Home](Screenshots/login.png)
+![Create Account](Screenshots/create_acc.png)
+![Transactions](Screenshots/transactions.png)
 
 ---
 
