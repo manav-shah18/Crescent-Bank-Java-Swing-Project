@@ -1,24 +1,108 @@
-# Crescent Bank - Java Swing Project
+# Crescent Bank Management System
 
-### 💾 Requirements:
-- Java JDK 8+
-- MySQL Workbench
-- MySQL Connector/J (drop the .jar into `lib` folder)
+A robust **Java Swing-based Banking System** integrated with **MySQL**, designed to simulate real-world banking operations such as account management, deposits, withdrawals, and transaction tracking.
 
-### 🏦 Setup:
+---
 
-1. Import the `banking_db.sql` into your MySQL server.
-2. Replace DB credentials in `DatabaseConnection.java` if needed.
-3. Open terminal and run:
+## Features
+
+* Account Creation
+* Deposit & Withdrawal
+* Fund Transfer
+* Transaction History
+* Secure database connectivity using JDBC
+* Interactive GUI built with Java Swing
+
+---
+
+## Tech Stack
+
+* **Frontend:** Java Swing (GUI)
+* **Backend:** Java
+* **Database:** MySQL
+* **Connectivity:** JDBC
+
+---
+
+## Setup Instructions
+
+### 1. Clone the repository
 
 ```bash
-javac -cp ".;lib/mysql-connector-java-8.0.xx.jar" src/**/*.java
-java -cp ".;lib/mysql-connector-java-8.0.xx.jar;src" Main
+git clone https://github.com/manav-shah18/Crescent-Bank-Java-Swing-Project.git
+cd Crescent-Bank-Java-Swing-Project
 ```
 
-### ✅ Features:
-- Login with Account No + PIN
-- Dashboard: balance, transactions, personal info
-- Deposit / Withdraw / Transfer
-- Change PIN
-- Create new account
+---
+
+### 2. Setup Database (MySQL)
+
+* Open MySQL Workbench
+* Run:
+
+```sql
+CREATE DATABASE banking_system;
+USE banking_system;
+```
+
+* Import the provided `.sql` file
+
+---
+
+### 3. Configure Database Connection
+
+Update credentials in:
+
+```
+DatabaseConnection.java
+```
+
+```java
+String url = "jdbc:mysql://localhost:3306/banking_system";
+String user = "root";
+String password = "your_password";
+```
+
+---
+
+### 4. Run the Project
+
+```bash
+javac *.java
+java Main
+```
+
+OR run using VS Code button
+
+---
+
+## Screenshots
+
+![Home](screenshots/home.png)
+![Create Account](screenshots/create.png)
+![Transactions](screenshots/transaction.png)
+
+---
+
+## Project Objective
+
+This project demonstrates the implementation of a **desktop-based banking system**, focusing on:
+
+* Database integration using JDBC
+* GUI development using Java Swing
+* Real-world transaction workflows
+
+---
+
+## Future Improvements
+
+* Add login authentication system
+* Improve UI/UX design
+* Convert to web-based application (Spring Boot)
+* Add encryption for sensitive data
+
+---
+
+## Acknowledgment
+
+Built as part of academic learning and practical implementation of Java and database concepts.
